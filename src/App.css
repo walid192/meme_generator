@@ -1,38 +1,137 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  box-sizing: border-box;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.App{
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 10px  30%  48px 30%;
+  border-radius: 5px;
+  background-color: #e2eafc  ;
+}
+
+.container{
+  border-radius: 5%;
+  background-color: #d8e2dc;
+}
+
+
+.navb{
+display: flex;
+align-items: center;
+flex-direction: row;
+justify-content: space-between;
+height: 65px;
+background: linear-gradient(90deg,#672280 1.18%,#A626D3 100%);
+color: white;
+width: 100%;
+}
+
+
+.navbb{
+  display: flex;
+  margin: 20px;
+  flex-direction: row;
+}
+
+.logo{
+  height: 40px;
+ margin: 10px;
+
+}
+
+.navbc{
+  margin-right: 20px;
+}
+
+.header_title{
+  margin-top: 20px;
+  font-size: 20px;
+  font-style: italic;
+}
+
+.meme{
+  padding: 40px;
+}
+
+.meme_form{
+  display: grid;
+  grid-template: 40px 40px /1fr 1fr;
+}
+
+.inputs{
+  margin: 5px 5px;
+  border-radius: 5px;
+ border: 1px solid;
+ text-indent: 15px;
+
+}
+
+.form_button{
+  grid-column: 1/-1;
+  margin: 5px 5px;
+  border-radius: 5px;
+  color: aliceblue;
+  border: 2px solid black;
+  background: linear-gradient(90deg,#672280 1.18%,#A626D3 100%);
+
+}
+
+main{
+  padding: 36px;
+}
+
+
+.meme {
+  position: relative;
+  text-align: center;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.memeImg{
+   width: 400px;
+  height: 400px; /*
+  margin-top: 25px;
+  margin-left: 34%; */
+  border-radius: 3px;
+  max-width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+.meme--text {
+  position: absolute;
+  width: 80%;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 15px 0;
+  padding: 0 5px;
+  font-family: impact, sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow:
+      2px 2px 0 #000,
+      -2px -2px 0 #000,
+      2px -2px 0 #000,
+      -2px 2px 0 #000,
+      0 2px 0 #000,
+      2px 0 0 #000,
+      0 -2px 0 #000,
+      -2px 0 0 #000,
+      2px 2px 5px #000;
+}
+
+.bottom {
+  bottom: 80px;
+  position: absolute;
+  right: 200px;
+}
+
+.top {
+  position: absolute;
+  top: 80px;
+  right: 200px;
+
 }
